@@ -9,23 +9,26 @@ import { ContactComponent } from './pages/contact/contact';
 export const routes: Routes = [
 
   {
-    path: '',
-    component: HomeComponent
+    path:'',redirectTo:'home', pathMatch:'full'
   },
 
   {
-    path: 'prestations',
-    component: PrestationsComponent
+    path: 'home', loadComponent: () => import('./pages/home/home').then(m => m.HomeComponent)
+  },
+
+  {
+    path:'prestations',
+    loadComponent: () => import('./pages/prestations/prestations').then(m=>m.PrestationsComponent)
   },
 
   {
     path: 'about',
-    component: AboutComponent
+    loadComponent: () => import('./pages/about/about').then(m => m.AboutComponent)
   },
 
   {
     path: 'contact',
-    component: ContactComponent
+    loadComponent: () => import('./pages/contact/contact').then(m => m.ContactComponent)
   }
 
 ];
