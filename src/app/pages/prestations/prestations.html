@@ -1,27 +1,69 @@
 <section class="prestations">
 
   <div class="header">
+
     <h1>Nos Prestations</h1>
-    <p>Des soins et coiffures adaptés à votre style naturel.</p>
+
+    <p>
+      Révélez votre beauté naturelle, prenez soin de vous et de ceux que vous aimez.
+    </p>
+
   </div>
+
+  <!-- FILTRES -->
+  <div class="filters">
+
+    <button (click)="setFilter('all')">Tout</button>
+
+    <button (click)="setFilter('bienetre')">Bien-être</button>
+
+    <button (click)="setFilter('diagnostic')">Diagnostic</button>
+
+    <button (click)="setFilter('info')">Infos</button>
+
+  </div>
+
+  <!-- CONTENU -->
 
   <div class="grid">
 
-    <div class="card" *ngFor="let p of prestations">
 
-      <h2>{{ p.title }}</h2>
+    <!-- BIEN-ÊTRE -->
+    <div class="card" *ngIf="selected === 'all' || selected === 'bienetre'">
 
-      <p>{{ p.desc }}</p>
+      <h2>💆‍♀️ Bien-être & relaxation</h2>
 
-      <span>{{ p.price }}</span>
+      <p>
+        Ces soins sont parfaits pour les personnes sujettes au stress, à la fatigue ou aux tensions accumulées dans le haut du corps.
+      </p>
 
-      <a
-        href="https://wa.me/+33759236988"
-        target="_blank">
+    </div>
 
-        Réserver
 
-      </a>
+    <!-- DIAGNOSTIC -->
+    <div class="card" *ngIf="selected === 'all' || selected === 'diagnostic'">
+
+      <h2>🧴 Diagnostic personnalisé</h2>
+
+      <p>
+        Tous nos soins comprennent un diagnostic personnalisé avant la prestation afin d’adapter le protocole à votre type de peau, de cuir chevelu ou à vos besoins spécifiques.
+      </p>
+
+    </div>
+
+
+    <!-- INFOS -->
+    <div class="card info" *ngIf="selected === 'all' || selected === 'info'">
+
+      <h2>⚠️ Informations importantes</h2>
+
+      <p>
+        Certaines contre-indications peuvent s’appliquer selon votre état de santé et vos traitements médicaux.
+      </p>
+
+      <p>
+        N’hésitez pas à nous contacter pour plus d’informations.
+      </p>
 
     </div>
 
