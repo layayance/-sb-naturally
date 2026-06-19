@@ -24,14 +24,19 @@
   </div>
 
   <!-- CONTENU -->
-
   <div class="grid">
 
-
     <!-- BIEN-ÊTRE -->
-    <div class="card" *ngIf="selected === 'all' || selected === 'bienetre'">
+    <div
+      class="card"
+      *ngIf="selected === 'all' || selected === 'bienetre'"
+      @fade
+    >
 
-      <h2>💆‍♀️ Bien-être & relaxation</h2>
+      <h2>
+        <mat-icon>spa</mat-icon>
+        Bien-être & relaxation
+      </h2>
 
       <p>
         Ces soins sont parfaits pour les personnes sujettes au stress, à la fatigue ou aux tensions accumulées dans le haut du corps.
@@ -39,11 +44,17 @@
 
     </div>
 
-
     <!-- DIAGNOSTIC -->
-    <div class="card" *ngIf="selected === 'all' || selected === 'diagnostic'">
+    <div
+      class="card"
+      *ngIf="selected === 'all' || selected === 'diagnostic'"
+      @fade
+    >
 
-      <h2>🧴 Diagnostic personnalisé</h2>
+      <h2>
+        <mat-icon>healing</mat-icon>
+        Diagnostic personnalisé
+      </h2>
 
       <p>
         Tous nos soins comprennent un diagnostic personnalisé avant la prestation afin d’adapter le protocole à votre type de peau, de cuir chevelu ou à vos besoins spécifiques.
@@ -51,11 +62,17 @@
 
     </div>
 
-
     <!-- INFOS -->
-    <div class="card info" *ngIf="selected === 'all' || selected === 'info'">
+    <div
+      class="card info"
+      *ngIf="selected === 'all' || selected === 'info'"
+      @fade
+    >
 
-      <h2>⚠️ Informations importantes</h2>
+      <h2>
+        <mat-icon>warning</mat-icon>
+        Informations importantes
+      </h2>
 
       <p>
         Certaines contre-indications peuvent s’appliquer selon votre état de santé et vos traitements médicaux.
