@@ -1,1 +1,35 @@
-<p>navbar works!</p>
+<nav 
+  class="navbar"
+  [class.scrolled]="isScrolled">
+
+  <div class="logo">
+    SB NATURALLY
+  </div>
+
+
+  <div class="menu">
+
+    <a  class="outline-btn"routerLink="/home">
+      Accueil
+    </a>
+
+    <a  routerLink="/prestations">
+      Prestations
+    </a>
+
+    <a  class="outline-btn" routerLink="/about">
+      À propos
+    </a>
+
+    <a routerLink="/contact">
+      Contact
+    </a>
+
+    <button mat-raised-button>
+      Réserver
+    </button>
+
+  </div>
+
+
+</nav>

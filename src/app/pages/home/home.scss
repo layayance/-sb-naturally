@@ -1,0 +1,84 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 120px 8% 80px;
+
+  background:
+    linear-gradient(
+      rgba(250,247,242,.45),
+      rgba(250,247,242,.9)
+    ),
+    url('/images/douceur_naturelle.png') center / cover no-repeat;
+}
+
+
+.hero-content {
+  max-width: 650px;
+}
+
+.subtitle {
+  color: #7C8B70;
+  letter-spacing: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+h1 {
+  color: #6b6258;
+  font-size: clamp(45px, 7vw, 85px);
+  line-height: 1.05;
+  margin: 20px 0;
+
+  span {
+    color: #d8a9a2;
+  }
+}
+
+.description {
+  color: #766b60;
+  font-size: 20px;
+  line-height: 1.7;
+  max-width: 560px;
+}
+
+.hero-actions {
+  margin-top: 35px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.whatsapp-btn,
+.outline-btn {
+  text-decoration: none;
+  padding: 15px 32px;
+  border-radius: 50px;
+  transition: .3s ease;
+}
+
+.whatsapp-btn {
+  background: #7C8B70;
+  color: white;
+}
+
+.outline-btn {
+  border: 1px solid #7C8B70;
+  color: #7C8B70;
+}
+
+.whatsapp-btn:hover,
+.outline-btn:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+}
