@@ -1,0 +1,128 @@
+.footer {
+
+  background:#6f7d63;
+  color:white;
+
+  padding:70px 8% 25px;
+
+}
+
+
+
+.footer-content {
+
+  display:grid;
+
+  grid-template-columns:
+  2fr 1fr 1fr;
+
+  gap:50px;
+
+}
+
+
+
+.brand {
+
+
+h2 {
+
+font-size:30px;
+letter-spacing:2px;
+
+
+span {
+
+color:#F4D9D6;
+
+}
+
+}
+
+
+p {
+
+color:#f5eee8;
+
+line-height:1.6;
+
+}
+
+
+}
+
+
+
+.links,
+.contact {
+
+
+h3 {
+
+margin-bottom:20px;
+
+}
+
+
+a {
+
+display:block;
+
+color:white;
+
+text-decoration:none;
+
+margin-bottom:12px;
+
+transition:.3s;
+
+
+&:hover {
+
+color:#F4D9D6;
+
+}
+
+}
+
+
+p {
+
+margin-bottom:15px;
+
+}
+
+
+}
+
+
+
+.copyright {
+
+margin-top:50px;
+
+padding-top:20px;
+
+border-top:1px solid rgba(255,255,255,.25);
+
+text-align:center;
+
+font-size:14px;
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.footer-content {
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+
+}

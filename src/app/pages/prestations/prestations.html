@@ -1,1 +1,30 @@
-<p>prestations works!</p>
+<section class="prestations">
+
+  <div class="header">
+    <h1>Nos Prestations</h1>
+    <p>Des soins et coiffures adaptés à votre style naturel.</p>
+  </div>
+
+  <div class="grid">
+
+    <div class="card" *ngFor="let p of prestations">
+
+      <h2>{{ p.title }}</h2>
+
+      <p>{{ p.desc }}</p>
+
+      <span>{{ p.price }}</span>
+
+      <a
+        href="https://wa.me/+33759236988"
+        target="_blank">
+
+        Réserver
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
