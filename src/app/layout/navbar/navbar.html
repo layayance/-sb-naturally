@@ -1,27 +1,19 @@
 <nav class="navbar" [class.scrolled]="isScrolled">
-
-  <div class="logo">
-    SB NATURALLY
-  </div>
+  <div class="logo">SB NATURALLY</div>
 
   <button class="burger" (click)="open = !open">
     <mat-icon>{{ open ? 'close' : 'menu' }}</mat-icon>
   </button>
 
   <div class="menu" [class.active]="open">
+    <a routerLink="/home" (click)="open = false">Accueil</a>
 
-    <a routerLink="/home">Accueil</a>
+    <a routerLink="/prestations" (click)="open = false">Prestations</a>
 
-    <a routerLink="/prestations">Prestations</a>
+    <a routerLink="/about" (click)="open = false">À propos</a>
 
-    <a routerLink="/about">À propos</a>
+    <a routerLink="/contact" (click)="open = false">Contact</a>
 
-    <a routerLink="/contact">Contact</a>
-
-    <button mat-raised-button>
-      Réserver
-    </button>
-
+    <button mat-raised-button routerLink="/contact" (click)="open = false">Réserver</button>
   </div>
-
 </nav>
