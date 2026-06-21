@@ -1,105 +1,89 @@
 .navbar {
-
   position: fixed;
-  top:0;
-  left:0;
-  width:100%;
-  z-index:1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-  padding:20px 8%;
+  padding: 20px 8%;
+  background: transparent;
+  color: rgba(255, 0, 0, 0.395);
 
-  background:transparent;
-
-  transition:0.4s ease;
-
-  color:white;
-
+  transition: 0.4s;
 
   &.scrolled {
-
-    background:#FAF7F2;
-
-    box-shadow:
-    0 8px 25px rgba(0,0,0,.08);
-
-    color:#7C8B70;
-
-    padding:14px 8%;
-
+    background: #faf7f2;
+    color: #7c8b70;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    padding: 14px 8%;
   }
-
-
 }
-
-
 
 .logo {
-
-  font-size:24px;
-  font-weight:600;
-
-  letter-spacing:2px;
-
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
-
-
 .menu {
-
-  display:flex;
-  align-items:center;
-  gap:30px;
-
+  display: flex;
+  align-items: center;
+  gap: 30px;
 
   a {
-
-    text-decoration:none;
-    color:inherit;
-
-    font-weight:500;
-
-    transition:.3s;
-
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
 
     &:hover {
-
-      color:#F4D9D6;
-
+      color: #f4d9d6;
     }
-
   }
-
-
 
   button {
+    background: #7c8b70;
+    color: white;
+    border-radius: 30px;
+    padding: 8px 25px;
+  }
+}
 
-    background:#7C8B70;
+.burger {
+  display: none;
+  background: none;
+  border: 0;
+  color: inherit;
+}
 
-    color:white;
-
-    border-radius:30px;
-
-    padding:8px 25px;
-
+@media (max-width: 768px) {
+  .burger {
+    display: block;
   }
 
+  .menu {
+    position: absolute;
+    top: 80px;
+    right: 8%;
 
-}
+    display: none;
+    flex-direction: column;
 
+    background: #faf7f2;
+    padding: 25px;
+    border-radius: 20px;
 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 
-@media(max-width:768px){
+    a {
+      color: #7c8b70;
+    }
 
-
-.menu {
-
- display:none;
-
-}
-
-
+    &.active {
+      display: flex;
+    }
+  }
 }

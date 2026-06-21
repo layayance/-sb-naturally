@@ -1,35 +1,27 @@
-<nav 
-  class="navbar"
-  [class.scrolled]="isScrolled">
+<nav class="navbar" [class.scrolled]="isScrolled">
 
   <div class="logo">
     SB NATURALLY
   </div>
 
+  <button class="burger" (click)="open = !open">
+    <mat-icon>{{ open ? 'close' : 'menu' }}</mat-icon>
+  </button>
 
-  <div class="menu">
+  <div class="menu" [class.active]="open">
 
-    <a routerLink="/home">
-      Accueil
-    </a>
+    <a routerLink="/home">Accueil</a>
 
-    <a  routerLink="/prestations">
-      Prestations
-    </a>
+    <a routerLink="/prestations">Prestations</a>
 
-    <a  class="outline-btn" routerLink="/about">
-      À propos
-    </a>
+    <a routerLink="/about">À propos</a>
 
-    <a routerLink="/contact">
-      Contact
-    </a>
+    <a routerLink="/contact">Contact</a>
 
-   <a class="reserve" href="https://wa.me/+33759236988" target="_blank">
-    Réserver 
-  </a>
+    <button mat-raised-button>
+      Réserver
+    </button>
 
   </div>
-
 
 </nav>
