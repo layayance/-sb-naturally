@@ -1,6 +1,6 @@
 # 🌿 SB NATURALLY
 
-Site vitrine réalisé avec Angular pour le salon de beauté **SB NATURALLY**.
+Site vitrine réalisé avec Angular pour le salon de beauté _SB NATURALLY_.
 
 Le projet présente les prestations, permet aux clientes de découvrir les soins et de prendre rendez-vous directement via WhatsApp.
 
