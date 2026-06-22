@@ -73,7 +73,7 @@ message = '';
 
 sendToWhatsApp() {
 
-const phoneNumber = '33759236988';
+const phoneNumber = '33781512693';
 
 const text = 
 
