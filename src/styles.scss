@@ -10,7 +10,7 @@
 /* Base body */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #FAF7F2;
+  background-color: #faf7f2;
   color: #6b6258;
   scroll-behavior: smooth;
   margin: 0;
@@ -27,7 +27,8 @@ button {
   border: none;
   cursor: pointer;
 }
-html, body {
+html,
+body {
   min-height: 100%;
 }
 
@@ -47,10 +48,43 @@ main {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #7C8B70;
+  background: #7c8b70;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #FAF7F2;
+  background: #faf7f2;
+}
+.cdk-overlay-container {
+  z-index: 99999 !important;
+}
+
+.mat-mdc-datepicker-content,
+.mat-datepicker-content {
+  background: white !important;
+  opacity: 1 !important;
+  border-radius: 24px !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25) !important;
+}
+
+.mat-calendar,
+.mat-mdc-calendar {
+  background: white !important;
+  opacity: 1 !important;
+  color: #5f574f !important;
+}
+
+.mat-calendar-body-cell-content {
+  color: #5f574f !important;
+}
+
+.mat-calendar-body-selected {
+  background: #7c8b70 !important;
+  color: white !important;
+}
+
+.mat-calendar-period-button,
+.mat-calendar-previous-button,
+.mat-calendar-next-button {
+  color: #7c8b70 !important;
 }

@@ -36,111 +36,6 @@
 
     <!-- FORM -->
 
-    <!-- <form class="contact-form">
-      <h2>Envoyez un message</h2>
-      <input type="text" placeholder="Votre nom" />
-
-      <input type="email" placeholder="Votre email" />
-
-      <input type="tel" placeholder="Votre téléphone" />
-
-      <textarea placeholder="Votre message"> </textarea>
-
-      <button (click)="sendToWhatsApp()">Envoyer</button>
-    </form> -->
-
-    <!-- <form class="contact-form" (ngSubmit)="sendToWhatsApp()">
-      <h2>Envoyez un message</h2>
-
-      <input type="text" placeholder="Votre nom" [(ngModel)]="name" name="name" />
-
-      <input type="email" placeholder="Votre email" [(ngModel)]="email" name="email" />
-
-      <input type="tel" placeholder="Votre téléphone" [(ngModel)]="phone" name="phone" />
-
-      <textarea placeholder="Votre message" [(ngModel)]="message" name="message"> </textarea>
-
-      <button type="submit">Envoyer</button>
-    </form> -->
-
-    <!-- <form class="contact-form" (ngSubmit)="sendToWhatsApp()">
-      <h2>Prendre rendez-vous</h2>
-
-      <input type="text" placeholder="Votre nom" [(ngModel)]="name" name="name" required />
-
-      <input type="tel" placeholder="Votre téléphone" [(ngModel)]="phone" name="phone" required />
-
-      <mat-select [(ngModel)]="service" name="service">
-        <mat-option value=""> Choisir une prestation </mat-option>
-
-        <mat-option value="Soin bien-être"> Soin bien-être </mat-option>
-
-        <mat-option value="Massage"> Massage </mat-option>
-
-        <mat-option value="Soin cuir chevelu"> Soin cuir chevelu </mat-option>
-
-        <mat-option value="Diagnostic personnalisé"> Diagnostic personnalisé </mat-option>
-      </mat-select> -->
-    <!-- <mat-form-field appearance="outline" class="full">
-        <mat-label>Choisir une prestation</mat-label>
-
-        <mat-select [(ngModel)]="service" name="service">
-          <mat-option value="Soin bien-être"> 🌿 Soin bien-être </mat-option>
-
-          <mat-option value="Massage"> 💆 Massage </mat-option>
-
-          <mat-option value="Soin cuir chevelu"> ✨ Soin cuir chevelu </mat-option>
-
-          <mat-option value="Diagnostic personnalisé"> 🧴 Diagnostic personnalisé </mat-option>
-        </mat-select>
-      </mat-form-field>
-
-      <input type="date" [(ngModel)]="date" name="date" />
-
-      <textarea placeholder="Votre demande" [(ngModel)]="message" name="message"></textarea>
-
-      <button mat-raised-button type="submit">Réserver sur WhatsApp</button>
-    </form> -->
-
-    <!-- <form class="contact-form" (ngSubmit)="sendToWhatsApp()">
-      <h2>Prendre rendez-vous</h2>
-
-      <mat-form-field appearance="fill" class="full">
-        <mat-label>Nom</mat-label>
-        <input matInput [(ngModel)]="name" name="name" required />
-      </mat-form-field>
-
-      <mat-form-field appearance="fill" class="full">
-        <mat-label>Téléphone</mat-label>
-        <input matInput type="tel" [(ngModel)]="phone" name="phone" required />
-      </mat-form-field>
-
-      <mat-form-field appearance="outline" class="full">
-        <mat-label>Prestation</mat-label>
-
-        <mat-select [(ngModel)]="service" name="service" required>
-          <mat-option value="Soin bien-être">🌿 Soin bien-être</mat-option>
-          <mat-option value="Massage">💆 Massage</mat-option>
-          <mat-option value="Cuir chevelu">✨ Soin cuir chevelu</mat-option>
-          <mat-option value="Diagnostic">🧴 Diagnostic</mat-option>
-        </mat-select>
-
-        <mat-icon matSuffix>expand_more</mat-icon>
-      </mat-form-field>
-
-      <mat-form-field appearance="outline" class="full">
-        <mat-label>Date</mat-label>
-        <input matInput type="date" [(ngModel)]="date" name="date" />
-      </mat-form-field>
-
-      <mat-form-field appearance="outline" class="">
-        <mat-label>Message</mat-label>
-        <textarea matInput rows="4" [(ngModel)]="message" name="message"></textarea>
-      </mat-form-field>
-
-      <button mat-raised-button class="submit-btn" type="submit">Réserver sur WhatsApp</button>
-    </form> -->
-
     <form class="contact-form" (ngSubmit)="sendToWhatsApp()">
       <h2>Prendre rendez-vous</h2>
 
@@ -162,13 +57,14 @@
           <mat-option value="Massage">💆 Massage</mat-option>
           <mat-option value="Soin cuir chevelu">✨ Soin cuir chevelu</mat-option>
           <mat-option value="Diagnostic">🧴 Diagnostic</mat-option>
+          <mat-option value="Autre">Autre</mat-option>
         </mat-select>
       </mat-form-field>
 
-      <mat-form-field appearance="outline" class="full">
+      <mat-form-field appearance="outline" class="example-full-width">
         <mat-label>Date</mat-label>
 
-        <input matInput [matDatepicker]="picker" [(ngModel)]="date" name="date" />
+        <input matInput [matDatepicker]="picker" [(ngModel)]="date" name="date" required />
 
         <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
