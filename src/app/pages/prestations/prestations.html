@@ -1,59 +1,143 @@
 <section class="prestations">
+  <!-- HEADER -->
   <div class="header">
-    <h1>Nos Prestations</h1>
+    <h1>Nos Prestations 🌿</h1>
 
-    <p>Révélez votre beauté naturelle, prenez soin de vous et de ceux que vous aimez.</p>
+    <p>Bien-être • Head Spa • Soins Visage • Soins Corps • Massages</p>
+
+    <p>Offrez-vous une parenthèse de détente et de beauté grâce à nos soins personnalisés.</p>
   </div>
 
   <!-- FILTRES -->
   <div class="filters">
+    <!-- Affiche toutes les prestations -->
     <button (click)="setFilter('all')">Tout</button>
 
-    <button (click)="setFilter('bienetre')">Bien-être</button>
+    <!-- Filtre soins visage -->
+    <button (click)="setFilter('visage')">✨ Visage</button>
 
-    <button (click)="setFilter('diagnostic')">Diagnostic</button>
+    <!-- Filtre soins corps -->
+    <button (click)="setFilter('corps')">🌸 Corps</button>
 
-    <button (click)="setFilter('info')">Infos</button>
+    <!-- Filtre Head Spa -->
+    <button (click)="setFilter('headspa')">💆 Head Spa</button>
+
+    <!-- Filtre massages -->
+    <button (click)="setFilter('massage')">🌺 Massages</button>
+
+    <!-- Infos -->
+    <button (click)="setFilter('info')">⚠️ Infos</button>
   </div>
 
-  <!-- CONTENU -->
   <div class="grid">
-    <!-- BIEN-ÊTRE -->
-    <div class="card" *ngIf="selected === 'all' || selected === 'bienetre'">
-      <h2>
-        <mat-icon>spa</mat-icon>
-        Bien-être & relaxation
-      </h2>
+    <!-- ===================== -->
+    <!-- SOINS VISAGE -->
+    <!-- ===================== -->
 
-      <p>
-        Ces soins sont parfaits pour les personnes sujettes au stress, à la fatigue ou aux tensions
-        accumulées dans le haut du corps.
-      </p>
+    <div class="card" *ngIf="selected === 'all' || selected === 'visage'">
+      <h2>✨ Soins Visage</h2>
+
+      <h3>HydraSkin Expert — 45min • 50€</h3>
+
+      <p>Nettoyage profond, extraction des impuretés, hydratation et modelage.</p>
+
+      <h3>HydraSkin Prestige — 1h30 • 100€</h3>
+
+      <p>Soin complet anti-fatigue : visage, cou, décolleté, LED, hydratation intense et SPF.</p>
+
+      <h3>HydraPeel — 70€</h3>
+
+      <p>Peeling doux pour éliminer les cellules mortes, unifier le teint et raviver l’éclat.</p>
+
+      <p>Cure 3 séances : 180€</p>
+
+      <h3>Korean Lift — 70€</h3>
+
+      <p>Techniques inspirées des soins coréens pour raffermir et lisser le visage.</p>
+
+      <p>Cure 3 séances : 180€</p>
+
+      <h3>Microneedling — 80€</h3>
+
+      <p>Stimulation de la peau favorisant le collagène et le renouvellement cellulaire.</p>
+
+      <p>Cure 3 séances : 210€</p>
     </div>
 
-    <!-- DIAGNOSTIC -->
-    <div class="card" *ngIf="selected === 'all' || selected === 'diagnostic'">
-      <h2>
-        <mat-icon>healing</mat-icon>
-        Diagnostic personnalisé
-      </h2>
+    <!-- ===================== -->
+    <!-- SOINS CORPS -->
+    <!-- ===================== -->
 
-      <p>
-        Tous nos soins comprennent un diagnostic personnalisé avant la prestation afin d’adapter le
-        protocole à votre type de peau, de cuir chevelu ou à vos besoins spécifiques.
-      </p>
+    <div class="card" *ngIf="selected === 'all' || selected === 'corps'">
+      <h2>🌸 Soins Corps</h2>
+
+      <h3>HydraSkin Dos — 80€</h3>
+
+      <p>Nettoyage profond du dos, exfoliation, extraction et hydratation.</p>
+
+      <h3>HydraPeel Dos / Aisselles — 80€</h3>
+
+      <p>Soin rénovateur et éclaircissant pour améliorer la texture de la peau.</p>
+
+      <p>Cure 3 séances : 210€</p>
+
+      <h3>Soin Jambes Légères — 60€</h3>
+
+      <p>Gommage et massage drainant pour stimuler la circulation.</p>
     </div>
 
-    <!-- INFOS -->
+    <!-- ===================== -->
+    <!-- HEAD SPA -->
+    <!-- ===================== -->
+
+    <div class="card" *ngIf="selected === 'all' || selected === 'headspa'">
+      <h2>💆 Head Spa & Soins cheveux</h2>
+
+      <h3>Head Spa Expert — 1h • 60€</h3>
+
+      <p>Diagnostic cuir chevelu, nettoyage profond, massage relaxant et soin hydratant.</p>
+
+      <h3>Head Spa Prestige — 1h30 • 100€</h3>
+
+      <p>Rituel complet : massage crânien, soins capillaires intensifs et relaxation profonde.</p>
+    </div>
+
+    <!-- ===================== -->
+    <!-- MASSAGES -->
+    <!-- ===================== -->
+
+    <div class="card" *ngIf="selected === 'all' || selected === 'massage'">
+      <h2>🌺 Massages</h2>
+
+      <h3>Massage Relaxant — 1h • 60€</h3>
+
+      <p>Favorise la détente musculaire et réduit le stress.</p>
+
+      <h3>Massage Prestige — 1h30 • 100€</h3>
+
+      <p>Massage complet du corps pour une relaxation profonde.</p>
+
+      <h3>Head Massage — 1h • 60€</h3>
+
+      <p>Cuir chevelu, nuque, épaules et dos pour soulager les tensions.</p>
+    </div>
+
+    <!-- ===================== -->
+    <!-- INFORMATIONS -->
+    <!-- ===================== -->
+
     <div class="card info" *ngIf="selected === 'all' || selected === 'info'">
-      <h2>
-        <mat-icon>warning</mat-icon>
-        Informations importantes
-      </h2>
+      <h2>⚠️ Informations importantes</h2>
 
       <p>
-        Certaines contre-indications peuvent s’appliquer selon votre état de santé et vos
-        traitements médicaux.
+        Ces soins sont parfaits pour les personnes sujettes au stress, à la fatigue ou aux tensions.
+      </p>
+
+      <p>Tous nos soins comprennent un diagnostic personnalisé avant la prestation.</p>
+
+      <p>
+        Certaines contre-indications peuvent s’appliquer selon votre état de santé et traitements
+        médicaux.
       </p>
 
       <p>N’hésitez pas à nous contacter pour plus d’informations.</p>
