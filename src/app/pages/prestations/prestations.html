@@ -37,31 +37,29 @@
     <div class="card" *ngIf="selected === 'all' || selected === 'visage'">
       <h2>✨ Soins Visage</h2>
 
-      <h3>HydraSkin Expert — 45min • 50€</h3>
+      <div class="prestation-item">
+        <h3>HydraSkin Expert — 45min • 50€</h3>
+        <p>Nettoyage profond, extraction des impuretés, hydratation et modelage.</p>
+      </div>
 
-      <p>Nettoyage profond, extraction des impuretés, hydratation et modelage.</p>
+      <div class="prestation-item">
+        <h3>HydraSkin Prestige — 1h30 • 100€</h3>
+        <p>Soin complet anti-fatigue : visage, cou, décolleté, LED, hydratation intense et SPF.</p>
+      </div>
 
-      <h3>HydraSkin Prestige — 1h30 • 100€</h3>
+      <div class="prestation-item">
+        <h3>HydraPeel — 70€</h3>
+        <p>Peeling doux pour éliminer les cellules mortes, unifier le teint et raviver l’éclat.</p>
 
-      <p>Soin complet anti-fatigue : visage, cou, décolleté, LED, hydratation intense et SPF.</p>
+        <strong>Cure 3 séances : 180€</strong>
+      </div>
 
-      <h3>HydraPeel — 70€</h3>
+      <div class="prestation-item">
+        <h3>Korean Lift — 70€</h3>
+        <p>Techniques inspirées des soins coréens pour raffermir et lisser le visage.</p>
 
-      <p>Peeling doux pour éliminer les cellules mortes, unifier le teint et raviver l’éclat.</p>
-
-      <p>Cure 3 séances : 180€</p>
-
-      <h3>Korean Lift — 70€</h3>
-
-      <p>Techniques inspirées des soins coréens pour raffermir et lisser le visage.</p>
-
-      <p>Cure 3 séances : 180€</p>
-
-      <h3>Microneedling — 80€</h3>
-
-      <p>Stimulation de la peau favorisant le collagène et le renouvellement cellulaire.</p>
-
-      <p>Cure 3 séances : 210€</p>
+        <strong>Cure 3 séances : 180€</strong>
+      </div>
     </div>
 
     <!-- ===================== -->
@@ -71,19 +69,21 @@
     <div class="card" *ngIf="selected === 'all' || selected === 'corps'">
       <h2>🌸 Soins Corps</h2>
 
-      <h3>HydraSkin Dos — 80€</h3>
+      <div class="prestation-item">
+        <h3>HydraSkin Dos — 80€</h3>
+        <p>Nettoyage profond du dos, exfoliation, extraction et hydratation.</p>
+      </div>
 
-      <p>Nettoyage profond du dos, exfoliation, extraction et hydratation.</p>
+      <div class="prestation-item">
+        <h3>Soin Jambes Légères — 60€</h3>
+        <p>Gommage et massage drainant pour stimuler la circulation.</p>
+      </div>
 
-      <h3>HydraPeel Dos / Aisselles — 80€</h3>
-
-      <p>Soin rénovateur et éclaircissant pour améliorer la texture de la peau.</p>
-
-      <p>Cure 3 séances : 210€</p>
-
-      <h3>Soin Jambes Légères — 60€</h3>
-
-      <p>Gommage et massage drainant pour stimuler la circulation.</p>
+      <div class="prestation-item">
+        <h3>HydraPeel Dos / Aisselles — 80€</h3>
+        <p>Soin rénovateur et éclaircissant pour améliorer la texture de la peau.</p>
+        <p>Cure 3 séances : 210€</p>
+      </div>
     </div>
 
     <!-- ===================== -->
@@ -92,14 +92,15 @@
 
     <div class="card" *ngIf="selected === 'all' || selected === 'headspa'">
       <h2>💆 Head Spa & Soins cheveux</h2>
+      <div class="prestation-item">
+        <h3>Head Spa Expert — 1h • 60€</h3>
+        <p>Diagnostic cuir chevelu, nettoyage profond, massage relaxant et soin hydratant.</p>
+      </div>
 
-      <h3>Head Spa Expert — 1h • 60€</h3>
-
-      <p>Diagnostic cuir chevelu, nettoyage profond, massage relaxant et soin hydratant.</p>
-
-      <h3>Head Spa Prestige — 1h30 • 100€</h3>
-
-      <p>Rituel complet : massage crânien, soins capillaires intensifs et relaxation profonde.</p>
+      <div class="prestation-item">
+        <h3>Head Spa Prestige — 1h30 • 100€</h3>
+        <p>Rituel complet : massage crânien, soins capillaires intensifs et relaxation profonde.</p>
+      </div>
     </div>
 
     <!-- ===================== -->
@@ -109,17 +110,20 @@
     <div class="card" *ngIf="selected === 'all' || selected === 'massage'">
       <h2>🌺 Massages</h2>
 
-      <h3>Massage Relaxant — 1h • 60€</h3>
+      <div class="prestation-item">
+        <h3>Massage Relaxant — 1h • 60€</h3>
+        <p>Favorise la détente musculaire et réduit le stress.</p>
+      </div>
 
-      <p>Favorise la détente musculaire et réduit le stress.</p>
+      <div class="prestation-item">
+        <h3>Massage Prestige — 1h30 • 100€</h3>
+        <p>Massage complet du corps pour une relaxation profonde.</p>
+      </div>
 
-      <h3>Massage Prestige — 1h30 • 100€</h3>
-
-      <p>Massage complet du corps pour une relaxation profonde.</p>
-
-      <h3>Head Massage — 1h • 60€</h3>
-
-      <p>Cuir chevelu, nuque, épaules et dos pour soulager les tensions.</p>
+      <div class="prestation-item">
+        <h3>Head Massage — 1h • 60€</h3>
+        <p>Cuir chevelu, nuque, épaules et dos pour soulager les tensions.</p>
+      </div>
     </div>
 
     <!-- ===================== -->
@@ -129,18 +133,23 @@
     <div class="card info" *ngIf="selected === 'all' || selected === 'info'">
       <h2>⚠️ Informations importantes</h2>
 
-      <p>
-        Ces soins sont parfaits pour les personnes sujettes au stress, à la fatigue ou aux tensions.
-      </p>
-
-      <p>Tous nos soins comprennent un diagnostic personnalisé avant la prestation.</p>
-
-      <p>
-        Certaines contre-indications peuvent s’appliquer selon votre état de santé et traitements
-        médicaux.
-      </p>
-
-      <p>N’hésitez pas à nous contacter pour plus d’informations.</p>
+      <div class="info-item">
+        <h3>Durée des soins</h3>
+        <p>
+          Les durées indiquées sont approximatives et peuvent varier selon les besoins et la
+          personnalisation du soin.
+        </p>
+        <p>
+          Ces soins sont parfaits pour les personnes sujettes au stress, à la fatigue ou aux
+          tensions.
+        </p>
+        <p>Tous nos soins comprennent un diagnostic personnalisé avant la prestation.</p>
+        <p>
+          Certaines contre-indications peuvent s’appliquer selon votre état de santé et traitements
+          médicaux.
+        </p>
+        <p>N’hésitez pas à nous contacter pour plus d’informations.</p>
+      </div>
     </div>
   </div>
 </section>
