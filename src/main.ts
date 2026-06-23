@@ -1,8 +1,12 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { provideRouter } from '@angular/router';
-import { App } from './app/app';
-import { routes } from './app/app.routes';
+import { registerLocaleData } from '@angular/common';
+import localeFr from '@angular/common/locales/fr';
 
-bootstrapApplication(App, { ...appConfig, providers: [provideRouter(routes)] })
+import { App } from './app/app';
+import { appConfig } from './app/app.config';
+
+registerLocaleData(localeFr);
+
+bootstrapApplication(App, appConfig)
   .catch((err) => console.error(err));
+  
